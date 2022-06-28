@@ -1,0 +1,11 @@
+.sectionWork{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.1);
+}
+.workCard {
+    border: 1px solid black;
+}

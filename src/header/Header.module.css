@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #016170;
+    height: 50px;
+    padding: 20px 36px;
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.tittle {
+    color: #ffffff;
+    display: flex;
+    align-items: flex-start;
+}
+.buttonContainer {
+
+}
+.button {
+    color: #ffffff;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #009393;
+    border-radius: 10px;
+    border: 1px solid #00e0c6;
+}
