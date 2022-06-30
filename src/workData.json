@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name":"Info Blog",
+        "description": "detalle del Blog",
+        "tecnologies":"Python, Django, HTML, CSS, Javascript",
+        "img":"../img/infoblog1200.png",
+        "link": "https://calm-lake-52214.herokuapp.com/"
+    },
+    {
+        "id": 2,
+        "name":"Saltarina",
+        "description": "detalle del juego",
+        "tecnologies":"Godot Engine",
+        "img":"../img/game2d1200.png",
+        "link": "https://github.com/Ferclemens/Godot-Game2D-Infogamers2021"
+    },
+    {
+        "id": 3,
+        "name":"Meme Generator",
+        "description": "detalle de la pagina de memes",
+        "tecnologies":"React, CSS, Javascript",
+        "img":"../img/memeGenerator1200.png",
+        "link": "https://github.com/Ferclemens/React-MemeGenerator-Scrimba"
+    },
+    {
+        "id": 4,
+        "name":"movies Search",
+        "description": "detalle del buscador",
+        "tecnologies":"React, CSS, Javascript",
+        "img":"../img/moviesSearch1200.png",
+        "link": "https://github.com/Ferclemens/React-BuscadorDePeliculas"
+    }
+]
