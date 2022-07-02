@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name":"Info Blog",
-        "description": "detalle del Blog",
+        "description": "Blog sobre los 17 Objetivos de Desarrollo Sostenible propuestos por la ONU para salvar al planeta.",
         "tecnologies":"Python, Django, HTML, CSS, Javascript",
         "img":"../img/infoblog1200.png",
         "link": "https://calm-lake-52214.herokuapp.com/"
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "name":"Saltarina",
-        "description": "detalle del juego",
+        "description": "Juego de plataforma 2D, single player.",
         "tecnologies":"Godot Engine",
         "img":"../img/game2d1200.png",
         "link": "https://github.com/Ferclemens/Godot-Game2D-Infogamers2021"
@@ -18,15 +18,15 @@
     {
         "id": 3,
         "name":"Meme Generator",
-        "description": "detalle de la pagina de memes",
+        "description": "Generador de memes, utiliza la API de imgflip para obtener las imagenes.",
         "tecnologies":"React, CSS, Javascript",
         "img":"../img/memeGenerator1200.png",
         "link": "https://github.com/Ferclemens/React-MemeGenerator-Scrimba"
     },
     {
         "id": 4,
-        "name":"movies Search",
-        "description": "detalle del buscador",
+        "name":"Movies Search",
+        "description": "Buscador de películas, utiliza la API de The Movie Data Base para la busqueda.",
         "tecnologies":"React, CSS, Javascript",
         "img":"../img/moviesSearch1200.png",
         "link": "https://github.com/Ferclemens/React-BuscadorDePeliculas"

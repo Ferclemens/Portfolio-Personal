@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "logo": "../img/linkedin.png",
+        "link": "https://www.linkedin.com/in/foclemens/"
+    },
+    {
+        "id": 2,
+        "logo": "../img/twitter.png",
+        "link": "https://twitter.com/FerClemens"
+    },
+    {
+        "id": 3,
+        "logo": "../img/instagram.png",
+        "link": "https://www.instagram.com/ferclemens/"
+    },
+    {
+        "id": 4,
+        "logo": "../img/github.png",
+        "link": "https://github.com/Ferclemens"
+    }
+]

@@ -3,27 +3,32 @@
     justify-content: space-between;
     align-items: center;
     background-color: #0d454e;
-    height: 50px;
+    height: 90px;
     padding: 20px 36px;
-    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.3);
 }
 .tittle {
-    display: flex;
-    align-items: flex-start;
-	animation: text-shadow-pop-tl 0.6s both;
-    font-size: 5vh;
+  display: flex;
+  align-items: flex-start;
+  font-size: 5vh;
+  font-weight: 700;
+	animation: text-shadow-pop-bl 0.6s both;
 }
-
-.buttonContainer {
-
+.link {
+  text-decoration: none;
+  color: azure;
+  font-size: x-large;
 }
 .button {
-    color: #ffffff;
-    margin: 10px;
-    padding: 10px 15px;
-    background-color: #009393;
-    border-radius: 10px;
-    border: 1px solid #00e0c6;
+  margin: 30px;
+  padding: 10px 15px;
+  background-color: #0d454e;
+  border: none;
+  text-decoration: none;
+}
+.button:hover {
+  animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+  border: 0.5px solid #009393;
 }
 
 /* ----------------------------------------------
@@ -38,14 +43,26 @@
  * animation text-shadow-pop-tl
  * ----------------------------------------
  */
- @keyframes text-shadow-pop-tl {
-    0% {
-      text-shadow: 0 0 #009393, 0 0 #009393, 0 0 #009393, 0 0 #009393;
-      transform: translateX(0) translateY(0);
-    }
-    100% {
-      text-shadow: -0px -0px #009393, -1px -1px #009393, -2px -2px #009393, -3px -3px #009393;
-      transform: translateX(4px) translateY(4px);
-    }
+
+ @keyframes text-shadow-pop-bl {
+  0% {
+    text-shadow: 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555, 0 0 #555555;
+    transform: translateX(0) translateY(0);
   }
-  
+  100% {
+    text-shadow: -1px 1px #009393, -2px 2px #009393, -3px 3px #009393, -4px 4px #009393, -5px 5px #009393, -6px 6px #009393, -7px 7px #009393, -8px 8px #009393;
+    transform: translateX(8px) translateY(-8px);
+  }
+}
+
+
+ @keyframes shadow-pop-bl {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    box-shadow: -1px 1px #009393, -2px 2px #009393, -3px 3px #009393, -4px 4px #009393, -5px 5px #009393, -6px 6px #009393, -7px 7px #009393, -8px 8px #009393;
+    transform: translateX(8px) translateY(-8px);
+  }
+}

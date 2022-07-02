@@ -1,20 +1,34 @@
 import React from 'react'
 import { useState } from "react";
-import { useForm } from "react-hook-form";
+import styles from './Form.module.css'
+import dataContact from '../contactData.json'
 
-const Form = () => {
-  const { register, handleSubmit } = useForm();
-  const [data, setData] = useState("");
-  console.log(data);
-  
+
+const Form = () => { 
   return (
-    <div>
-      <h1>Contact</h1>
-      <form onSubmit={handleSubmit((data) => setData(JSON.stringify(data)))}>
-        <input {...register("Name")} placeholder="Name" />
-        <textarea {...register("Message")} placeholder="Message" />
-        <input type="submit" />
+    <div className={styles.container}>
+      <h2>Contacto</h2>
+      <form className={styles.form} action="https://formsubmit.co/foclemens@gmail.com" method="POST">
+        <input type="text" className={styles.boxText} placeholder="Name" name="name" required/>
+        <input type="email" className={styles.boxText} placeholder="Email" name="email" required/>
+        <textarea type="message" className={`${styles.boxText} ${styles.textArea}`} placeholder="Message" name="textarea"/>
+        <button type="submit" className={`${styles.boxText} ${styles.submit}`}>Send Message</button>
       </form>
+      <h2>Redes</h2>
+      <div className={styles.redes}>
+      {dataContact.map((element => {
+        return (<a 
+          className={styles.logo} 
+          href={element.link} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          key={element.id}
+        >
+          <img className={styles.imgLogo} src={element.logo}/>
+        </a>
+        )
+      }))}
+    </div>
     </div>
   );
 }

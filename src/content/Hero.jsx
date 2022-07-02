@@ -4,7 +4,7 @@ import styles from './Hero.module.css'
 function Hero() {
   return (
     <div className={styles.container}>
-        <h2>Tecnologías utilizadas</h2>
+        <h1>Tecnologías utilizadas</h1>
         <div className={styles.ImgContainer}>
             <img src='../img/Django.png' className={styles.img}/>
             <img src='../img/css-3.png' className={styles.img}/>

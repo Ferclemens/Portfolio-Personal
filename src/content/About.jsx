@@ -8,8 +8,13 @@ const About = () => {
             <h1>aca va la imagen</h1>
         </div>
         <div className={styles.about}>
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h1>Me presento</h1>
+            <p>Estudiante de desarrollo web, apasionado por la tecnología, el diseño y los datos. En constante capacitación para lograr mi objetivo que es convertirme en desarrollador web Full Stack. 
+            
+            Actualmente aprendiendo a crear interfaces de usuario utilizando React (front), y manejo de Bases de datos con Java (back).
+            En busca de mi primer trabajo como desarrollador y asi dar inicio a mi carrera profesional en el sector IT.
+            
+            Buen trato, amable, responsable y predispuesto a trabajar en equipo, a aprender y colaborar.    </p>
         </div>
       </section>
   )
