@@ -1,5 +1,4 @@
 .container {
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,10 +11,10 @@
     font-size: 8vh;
 }
 .form {
+    flex-grow: 1;
     margin-bottom: 5px;
     display: flex;
     flex-direction: column;
-    min-width: 500px;
     height: auto;
 }
 .boxText {
@@ -26,6 +25,7 @@
     outline: none;
     border: #222 1px solid;
     animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    width: 600px;
 }
 .boxText:focus::placeholder {
     color: transparent;
@@ -109,5 +109,16 @@
     100% {
         box-shadow: -1px 1px #a4b007, -2px 2px #a4b007, -3px 3px #a4b007, -4px 4px #a4b007;
         transform: translateX(4px) translateY(-4px);
+    }
+}
+@media (max-width: 640px) {
+    .boxText {
+        width: 350px;
+    }
+    .redes {
+        gap: 50px;
+    }
+    .submit {
+        width: 200px;
     }
 }

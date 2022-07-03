@@ -5,11 +5,12 @@
     align-items: center;
     color: #ffffff;
 }
-.container h1 {
+.tittle {
   font-family: 'Bebas Neue', cursive;
   animation: text-shadow-pop-tl 0.6s both;
   font-size: 8vh;
   margin-bottom: 60px;
+  text-align: center;
 }
 .ImgContainer {
   display: flex;

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name":"Info Blog",
-        "description": "Blog sobre los 17 Objetivos de Desarrollo Sostenible propuestos por la ONU para salvar al planeta.",
+        "description": "Blog sobre los 17 Objetivos de Desarrollo Sostenible de la ONU para salvar al planeta.",
         "tecnologies":"Python, Django, HTML, CSS, Javascript",
         "img":"../img/infoblog1200.png",
         "link": "https://calm-lake-52214.herokuapp.com/"
