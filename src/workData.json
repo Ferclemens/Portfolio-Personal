@@ -28,7 +28,7 @@
         "name":"Movies Search",
         "description": "Buscador de películas, utiliza la API de The Movie Data Base para la busqueda.",
         "tecnologies":"React, CSS, Javascript",
-        "img":"../img/moviesSearch1200.png",
+        "img":"../img/moviesSearch1200(2).png",
         "link": "https://github.com/Ferclemens/React-BuscadorDePeliculas"
     }
 ]

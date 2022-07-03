@@ -11,7 +11,7 @@ function Hero() {
             <img src='../img/React.png' className={styles.img3}/>
             <img src='../img/js.png' className={styles.img}/>
             <img src='../img/html-5.png' className={styles.img}/>
-            <img src='../img/java.png' className={styles.img}/>
+            <img src='../img/java2.png' className={styles.img}/>
             <img src='../img/python.png' className={styles.img}/>
             <img src='../img/Git.png' className={styles.img}/>
             <img src='../img/Godot.png' className={styles.img}/>
