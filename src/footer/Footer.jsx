@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from '../footer/Footer.module.css'
-import dataContact from '../contactData.json'
 
 const Footer = () => {
-  return 
+  return (
+    <div className={styles.footer}></div>
+  )
 }
 
 export default Footer

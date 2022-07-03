@@ -1,10 +1,10 @@
 .sectionWork{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.1);
     
 }
 .workCard {
@@ -19,14 +19,13 @@
 	animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
 }
 .sectionWork h1 {
-    animation: text-shadow-pop-tl 0.6s both;
-    font-size: 5vh;
-
+  font-family: 'Bebas Neue', cursive;
+  animation: text-shadow-pop-tl 0.6s both;
+  font-size: 8vh;
 }
 .workTittle {
   display: flex;
   align-items: baseline;
-
   position: absolute;
   top: 0%;
   left: 0%;
@@ -40,7 +39,7 @@
 .workTittle:hover {
     opacity: 1;
 }
-.workTittle h3, p {
+.workTittle h3{
   animation: text-shadow-pop-left 0.6s both;
   margin: 30px;
 }

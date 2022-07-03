@@ -14,6 +14,7 @@ function Landing() {
       <Hero />
       <Work />
       <Form />
+      <Footer/>
     </div>
   )
 }
