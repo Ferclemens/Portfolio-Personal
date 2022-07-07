@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './Form.module.css'
 import dataContact from '../contactData.json'
-import { Link } from 'react-router-dom'
 
 
 const Form = () => { 
@@ -11,7 +10,7 @@ const Form = () => {
       <form className={styles.form} action="https://formsubmit.co/foclemens@gmail.com" method="POST">
         <input type="text" className={styles.boxText} placeholder="Name" name="name" required/>
         <input type="email" className={styles.boxText} placeholder="Email" name="email" required/>
-        <input type="hidden" name="_next" value={<Link to='/Thanks'/>}/>
+        <input type="hidden" name="_next" value="https://ferclemens.vercel.app/Thanks"/>
         <textarea type="message" className={`${styles.boxText} ${styles.textArea}`} placeholder="Message" name="textarea"/>
         <button type="submit" className={`${styles.boxText} ${styles.submit}`}>Send Message</button>
       </form>

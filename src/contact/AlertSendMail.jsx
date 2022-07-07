@@ -6,18 +6,19 @@ function AlertSendMail() {
   return (
     <div>
         {Swal.fire({
-            title: 'Gracias!! Te respondo el mail a la brevedad.',
-            width: 600,
-            padding: '3em',
-            color: '#716add',
-            background: '#fff url(/images/trees.png)',
-            backdrop: `
-                rgba(0,0,123,0.4)
-                url("https://giphy.com/embed/JIX9t2j0ZTN9S")
-                center
-                no-repeat
-            `
-            })}
+          background: '#a4b007',
+          color: '#f0ffff',
+          position: 'center',
+          icon: 'success',
+          title: 'Enviado!! Te contesto a la brevedad.',
+          text: 'Redirigiendo to landing page!', 
+          showConfirmButton: false,
+          timer: 5000,
+          timerProgressBar: true,
+          //vanillaJS para redirigir a LandingPage
+          willClose: setTimeout(() => { window.location.replace('/')}, 5000)
+          })
+        }
     </div>
   )
 }
