@@ -4,6 +4,7 @@ import Landing from './LandingPage/Landing';
 import Form from './contact/Form';
 import Work from './content/Work';
 import ProblemasTecnicos from './problems/ProblemasTecnicos';
+import AlertSendMail from './contact/AlertSendMail';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
           <Route path="/Stats" element={<ProblemasTecnicos/>}/>
           <Route path="/Work" element={<Work/>}/>
           <Route path="/Contact" element={<Form/>}/>
+          <Route path="/Thanks" element={<AlertSendMail/>}/>
           <Route path="*" element={<ProblemasTecnicos/>}/>
         </Routes>
       </BrowserRouter>

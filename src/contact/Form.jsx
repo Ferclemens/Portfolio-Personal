@@ -1,7 +1,7 @@
 import React from 'react'
-import { useState } from "react";
 import styles from './Form.module.css'
 import dataContact from '../contactData.json'
+import { Link } from 'react-router-dom'
 
 
 const Form = () => { 
@@ -11,6 +11,7 @@ const Form = () => {
       <form className={styles.form} action="https://formsubmit.co/foclemens@gmail.com" method="POST">
         <input type="text" className={styles.boxText} placeholder="Name" name="name" required/>
         <input type="email" className={styles.boxText} placeholder="Email" name="email" required/>
+        <input type="hidden" name="_next" value={<Link to='/Thanks'/>}/>
         <textarea type="message" className={`${styles.boxText} ${styles.textArea}`} placeholder="Message" name="textarea"/>
         <button type="submit" className={`${styles.boxText} ${styles.submit}`}>Send Message</button>
       </form>
@@ -29,6 +30,8 @@ const Form = () => {
         )
       }))}
     </div>
+    {/*<iframe src="https://giphy.com/embed/JIX9t2j0ZTN9S" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/JIX9t2j0ZTN9S">via GIPHY</a></p>
+     */}
     </div>
   );
 }
