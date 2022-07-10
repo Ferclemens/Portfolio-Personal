@@ -1,21 +1,22 @@
 import React from 'react'
+import styles from './CardWork.module.css'
+import data from '../workData.json'
 
 function CardWork() {
   return (
-    <div>
-      {Swal.fire({
-      title: 'Custom width, padding, color, background.',
-      width: 600,
-      padding: '3em',
-      color: '#716add',
-      background: '#fff url(/images/trees.png)',
-      backdrop: `
-        rgba(0,0,123,0.4)
-        url("/images/nyan-cat.gif")
-        left top
-        no-repeat
-      `
-        })}
+    <div className={styles.container}>
+      {data.map((work => {
+        return (
+          <div className={styles.card}>
+            <img src={work.img}></img>
+            <h1>{work.name}</h1>
+            <p>{work.description}</p>
+            <button>Ir a web</button>
+            <button>Ir a GitHub</button>
+            <button>Volver</button>
+          </div>
+        )
+      }))}
     </div>
   )
 }

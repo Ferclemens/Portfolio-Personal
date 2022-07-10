@@ -1,13 +1,29 @@
 import React from 'react'
 import styles from './Form.module.css'
 import dataContact from '../contactData.json'
+import Swal from 'sweetalert2'
 
+const Form = () => {
+  const alert = () => { 
+      Swal.fire({
+        background: '#a4b007',
+        color: '#f0ffff',
+        position: 'center',
+        icon: 'success',
+        title: 'Enviado!! Te contesto a la brevedad.',
+        text: 'Volviendo al inicio!',
+        showConfirmButton: false,
+        timer: 5000,
+        timerProgressBar: true,
+        //vanillaJS para redirigir a LandingPage
+        willClose: setTimeout(() => { window.location.replace('/')}, 5000)
+        })
+  }
 
-const Form = () => { 
   return (
     <div className={styles.container}>
       <h2 className={styles.tittle}>Contacto</h2>
-      <form className={styles.form} action="https://formsubmit.co/foclemens@gmail.com" method="POST">
+      <form className={styles.form} action="https://formsubmit.co/foclemens@gmail.com" method="POST" onSubmit={alert}>
         <input type="text" className={styles.boxText} placeholder="Name" name="name" required/>
         <input type="email" className={styles.boxText} placeholder="Email" name="email" required/>
         <input type="hidden" name="_next" value="https://ferclemens.vercel.app/Thanks"/>
@@ -19,7 +35,7 @@ const Form = () => {
       {dataContact.map((element => {
         return (<a 
           className={styles.logo} 
-          href={element.link} 
+          href={element.link}
           target="_blank" 
           rel="noopener noreferrer"
           key={element.id}
