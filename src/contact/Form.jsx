@@ -10,8 +10,8 @@ const Form = () => {
         color: '#f0ffff',
         position: 'center',
         icon: 'success',
-        title: 'Enviado!! Te contesto a la brevedad.',
-        text: 'Volviendo al inicio!',
+        title: 'Enviado!!',
+        text: 'Volviendo al inicio',
         showConfirmButton: false,
         timer: 5000,
         timerProgressBar: true,
@@ -26,7 +26,7 @@ const Form = () => {
       <form className={styles.form} action="https://formsubmit.co/foclemens@gmail.com" method="POST" onSubmit={alert}>
         <input type="text" className={styles.boxText} placeholder="Name" name="name" required/>
         <input type="email" className={styles.boxText} placeholder="Email" name="email" required/>
-        <input type="hidden" name="_next" value="https://ferclemens.vercel.app/Thanks"/>
+        <input type="hidden" name="_next" value="https://ferclemens.vercel.app"/>
         <textarea type="message" className={`${styles.boxText} ${styles.textArea}`} placeholder="Message" name="textarea"/>
         <button type="submit" className={`${styles.boxText} ${styles.submit}`}>Send Message</button>
       </form>

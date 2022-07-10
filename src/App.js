@@ -15,7 +15,7 @@ function App() {
           <Route path="/Stats" element={<ProblemasTecnicos/>}/>
           <Route path="/Work" element={<Work/>}/>
           <Route path="/Contact" element={<Form/>}/>
-          <Route path="/WorkCard" element={<CardWork/>}/>
+          <Route path="/CardWork" element={<CardWork/>}/>
           <Route path="*" element={<ProblemasTecnicos/>}/>
         </Routes>
       </BrowserRouter>
